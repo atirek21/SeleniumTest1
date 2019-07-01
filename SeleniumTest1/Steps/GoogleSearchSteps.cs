@@ -38,7 +38,7 @@ namespace WebdriverBdd
         public void ThenIShouldSeeLinksReturnedInTheFirstSearchPage(int numberOfLinks)
         {
             int actualNumberOfLinks = googleHomePageAction.GetNumberOfLinks();
-            BrowserDriver.TakeScreenshot();
+          //  BrowserDriver.TakeScreenshot("@C:\Users\ATIREK\source\repos\AvivaAssignment-master",fileName.png);
             Assert.AreEqual(numberOfLinks, actualNumberOfLinks, "Number of links don't match with the expected links");
         }
 

@@ -14,6 +14,7 @@ namespace SeleniumTest1.Core
     public class BrowserDriver
     { 
         public static IWebDriver webDriver;
+        
 
         public static void InitialiseBrowser()
         {
@@ -27,11 +28,9 @@ namespace SeleniumTest1.Core
             webDriver.Dispose();
         }
 
-        public static void TakeScreenshot()
+        public static void TakeScreenshot(string v)
         {
-            Screenshot ss = ((ITakesScreenshot)webDriver).GetScreenshot();
-            var tempFileName = Path.Combine(Directory.GetCurrentDirectory(), Path.GetFileNameWithoutExtension(Path.GetTempFileName()));
-            ss.SaveAsFile(tempFileName, ScreenshotImageFormat.Png);
+            //Screenshot ss=((ITakesScreenshot)webDriver).GetScreenshot().SaveAsFile(fileName + ".png");
         }
     }
 }

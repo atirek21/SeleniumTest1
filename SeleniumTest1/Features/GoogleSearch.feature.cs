@@ -18,9 +18,9 @@ namespace SeleniumTest1.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.4.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Google Search Steps")]
+    [NUnit.Framework.DescriptionAttribute("Google Search")]
     [NUnit.Framework.CategoryAttribute("GoogleHomePage")]
-    public partial class GoogleSearchStepsFeature
+    public partial class GoogleSearchFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
@@ -32,7 +32,7 @@ namespace SeleniumTest1.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Google Search Steps", null, ProgrammingLanguage.CSharp, new string[] {
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Google Search", null, ProgrammingLanguage.CSharp, new string[] {
                         "GoogleHomePage"});
             testRunner.OnFeatureStart(featureInfo);
         }
@@ -72,11 +72,11 @@ namespace SeleniumTest1.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Google search for positive scenario")]
+        [NUnit.Framework.DescriptionAttribute("Google search for Aviva in Search bar")]
         [NUnit.Framework.CategoryAttribute("Positive")]
-        public virtual void GoogleSearchForPositiveScenario()
+        public virtual void GoogleSearchForAvivaInSearchBar()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Google search for positive scenario", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Google search for Aviva in Search bar", null, new string[] {
                         "Positive"});
 #line 5
 this.ScenarioInitialize(scenarioInfo);
@@ -86,7 +86,7 @@ this.ScenarioInitialize(scenarioInfo);
 #line 7
  testRunner.When("I search \'Aviva\' in search field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 8
- testRunner.Then("I should see \'191\' links returned in the first search page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I should see \'180\' links returned in the first search page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 9
  testRunner.And("Fetch the fifth link text", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
@@ -94,11 +94,11 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Google search for negative scenario")]
+        [NUnit.Framework.DescriptionAttribute("Google search for \'\' in Search bar")]
         [NUnit.Framework.CategoryAttribute("Negative")]
-        public virtual void GoogleSearchForNegativeScenario()
+        public virtual void GoogleSearchForInSearchBar()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Google search for negative scenario", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Google search for \'\' in Search bar", null, new string[] {
                         "Negative"});
 #line 12
 this.ScenarioInitialize(scenarioInfo);
@@ -106,9 +106,9 @@ this.ScenarioInitialize(scenarioInfo);
 #line 13
  testRunner.Given("I am on Google search page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 14
- testRunner.When("I search \'\'\'\' in search field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I search \'\' in search field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 15
- testRunner.Then("I should see \'0\' links returned in the first search page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I should see \'51\' links returned in the first search page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

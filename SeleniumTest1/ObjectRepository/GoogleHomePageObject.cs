@@ -6,7 +6,7 @@ namespace SeleniumTest1.ObjectRepository
     {
         public By SearchField => By.Name("q");
 
-        public By SearchLinks => By.TagName("a");
+        public By SearchLinks => By.XPath("//a");
 
     }
 }
