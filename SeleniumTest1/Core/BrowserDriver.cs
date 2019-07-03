@@ -12,9 +12,9 @@ using OpenQA.Selenium.Chrome;
 namespace SeleniumTest1.Core
 {
     public class BrowserDriver
-    { 
+    {
         public static IWebDriver webDriver;
-        
+
 
         public static void InitialiseBrowser()
         {
@@ -26,11 +26,6 @@ namespace SeleniumTest1.Core
         {
             webDriver.Close();
             webDriver.Dispose();
-        }
-
-        public static void TakeScreenshot(string v)
-        {
-            //Screenshot ss=((ITakesScreenshot)webDriver).GetScreenshot().SaveAsFile(fileName + ".png");
         }
     }
 }
